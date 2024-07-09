@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: "Bitter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  user-select: none;
+  
+}
+body{
+  height: 100vh;
+  width: 100%;
+}
+p{
+  line-height: 1.2em;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif
+}
+#app{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s ease;
+  position: fixed;
+}
+.threejs{
+  width: 90%;
+  height: 150vh;
+  max-width: 90%;
+  overflow: hidden;
+  margin-right: 10vw;
+  
+}
+.optionsPannel{
+  height: 100%;
+  width: 30%;
+  background-color: #52525b ;
+  transition: all 0.2s ease-in;
+  overflow-x: hidden;  
+  position: relative;
+  transition: all 0.2s ease;
+  font-size: 14px;
+  font-family: sa;
+  box-shadow: 0 0 10px gray;
+  /* cursor: pointer; */
+  
+}
+.optionsHeading{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.optionsHeading>*{
+  font-size: 22px;
+  color: white;
+  padding: 10px;
+}
+.close{
+  width: 15%;  
+}
+.options{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;  
+}
+.options .number{
+  padding-left: 20px;
+}
+.optionValue{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.optionValue .top{
+  font-size: large;
+}
+.optionValue .bottom{
+  font-size: small;
+}
+.overContainer{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  width:0%;
+  background-color: rgba(50,50,50,0.5);
+  height: 100vh;
+  top: 0;
+  left: 15%;
+  transition: all 0.5s ease;
+  right: 0;
+  z-index: 5;
+  
+}
+
+.open{
+  width: 100%;
+  padding-right: 10px;
+}
+.openOptions{
+  width: 60%;
+}
+
+/* left panel */
+.left-panel{
+  width: 15%;
+  margin: 10px;
+  padding: 10px;
+  display:flex;
+  flex-direction: column;
+}
+
+.left-panel-items{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+}
+.bx{
+  margin: 5px 0;
+}
+.bx:hover{
+  transform: scale(0.90);
+  cursor: pointer;
+  transition:all 150ms ease-in;
+}
+.icon-heading{
+  width: max-content;
+  word-spacing:-1px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color:white;
+  color: black;
+  padding: 6px 20px;
+  border-radius:0.75rem;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  overflow: hidden;
+}
+
+.visible {
+  opacity: 1;
+  height: auto;
+}
+.cross-div{
+  display: none;
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  margin: 0 10%;
+}
+
+.upper-panel{
+  position: absolute;
+  left: 3%;
+  top: 13%;
+  width: 85%;
+  max-width: 70%;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-between;
+}
+
+.model-name{
+  font-family: 'Bitter', sans-serif;
+  font-size: 26px;
+  color: #0c0b0b;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+ 
+}
+.priceValue{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #030303;
+  letter-spacing: 2px;
+}
+.optionsBtn{
+  min-width: 20%;
+  text-align: center;
+}
+.optionHeading{
+  min-width: 100%;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 600;
+  
+}
+.optionsHeading{
+  width:100%;
+}
+.logo{
+  position: absolute;
+  top:2%;
+  left:2%;
+  color: #050505;
+  font-size: 20px;
+  font-weight: normal;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 4px;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.maximus{
+  font-family: poppins;
+  font-weight: bold;
+  font-size: larger;
+}
+.d3{
+     height: 20px ;
+     width: 30px;
+     background-color: #030303;
+     color: #fff;
+     padding: 2px;
+     font-size: 17px;
+     font-weight: bold;
+     /* margin-left: 5% ; */
+}

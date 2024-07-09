@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/loader.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Crazy Creations 3D</title>
+  </head>
+  <body>
+    <div class='loading'>
+      <div class="loader">
+          <svg viewBox="0 0 80 80">
+              <circle id="test" cx="40" cy="40" r="32"></circle>
+          </svg>
+      </div>
+      
+      <div class="loader triangle">
+          <svg viewBox="0 0 86 80">
+              <polygon points="43 8 79 72 7 72"></polygon>
+          </svg>
+      </div>
+      
+      <div class="loader">
+          <svg viewBox="0 0 80 80">
+              <rect x="8" y="8" width="64" height="64"></rect>
+          </svg>
+      </div>
+    </div>
+    <div class="cross-div">
+      <i class='bx bx-x bx-lg cross'></i>
+    </div>
+ 
+    <div id="app">
+            <!-- upper panel -->
+             <div class="logo">
+                <div class="maximus">Crazy Creations</div>
+                <div class="d3">3D</div>
+             </div>
+            <div class="upper-panel">
+              <p class="model-name">name</p>
+              <div class="">                
+                <p class="priceValue">value</p>
+              </div>
+            </div>
+        
+            <!-- left- panel -->
+             
+            <div id="left-panel" class="left-panel">
+              <div class="left-panel-items" class="left-panel-items">
+                <i class='bx bx-screenshot bx-md screenshot icon bx-tada-hover'></i>
+                <p class="icon-heading">Screenshot</p>
+              </div>
+              <div class="left-panel-items" class="left-panel-items">
+                <i class='bx bxs-camera bx-md reset-camera icon bx-tada-hover'></i>
+                <p class="icon-heading ">Reset Camera</p>
+              </div>
+              <div class="left-panel-items" class="left-panel-items">
+                <i class='bx bx-fullscreen bx-md fullscreen icon bx-tada-hover'></i>
+                <p class="icon-heading ">Fullscreen</p>
+              </div>
+              <div class="left-panel-items" class="left-panel-items">
+                <i class=' icon bx bx-clipboard bx-md show-part-list icon bx-tada-hover'></i>
+                <p class="icon-heading ">Show part list</p>
+              </div>
+              <div class="left-panel-items" class="left-panel-items">
+                <i class='bx bx-qr-scan bx-md ar-view icon bx-tada-hover'></i>
+                <p class="icon-heading ">AR View</p>
+              </div>
+            </div>
+          
+              <div class="threejs"></div>
+              <div class="optionsPannel">
+                <div class="optionsHeading">
+                   
+                  <div class="optionHeading">Options</div>
+                  
+                </div>
+                <div class="overContainer">
+                </div>
+              </div>       
+  </div> 
+  <script src="src/js/main.js" type="module"></script>       
+  </body>
+</html>
